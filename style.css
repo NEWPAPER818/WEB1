@@ -1,16 +1,19 @@
-a {
-  color: white;
-  text-decoration: none;  /*all deco none*/
-}
 
+/* tag ==================================================================== */
 body{
     margin:0px;
     background-color: rgb(15,15,15);
+    color: white;
 }
+
+a {
+  text-decoration: none;  /*all deco none*/
+  color: white;
+}
+
 
 h1{
   /*about all <h1>tag*/
-  color: white;
   font-size: 50px;
   text-align: center;
   border-bottom:4px solid gray;
@@ -18,13 +21,20 @@ h1{
   padding: 10px;
 }
 
+
+/* class ================================================================== */
+.bold {
+  font-weight: bold;
+}
+
+
+/* id ===================================================================== */
 #empty_box {
   width:100px;
   height:150px;
 }
 
 #end {
-  color: white;
   font-size: 14px;
   text-align: center;
 
@@ -34,9 +44,16 @@ h1{
   margin: 0px;
 }
 
-#grid ol{
-  color: white;
+#grid{
+  display: grid;
+  grid-template-columns: 137px 1fr;
+}
+
+#list{
   border-right: 2px solid gray;
+}
+
+#grid ol{
   width: 100px;
   margin:0;
   padding-top: 10px;
@@ -47,26 +64,22 @@ h1{
   margin-bottom: 3px;
 }
 
-#grid{
-  color:white;
-  display: grid;
-  grid-template-columns: 137px 1fr;
-}
-
 #article{
   padding-left: 15px;
   padding-right: 15px;
 }
 
 #article a{
-  color: rgb(50,50,255);
+  color: rgb(100, 100, 255);
 }
 
-@media(min-width:920px) {
+/* ======================================================================== */
+/* screen size============================================================= */
+@media(min-width:950px) {
   body{
     width: 920px;
-    border-left: calc((100vw - 961px)/2) black solid;
-    border-right: calc((100vw - 961px)/2) black solid;
+    border-left: calc((100vw - 950px)/2) black solid;
+    border-right: calc((100vw - 950px)/2) black solid;
 
     padding-left: 15px;
     padding-right: 15px;

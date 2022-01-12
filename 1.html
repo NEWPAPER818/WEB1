@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WEB1 - HTML</title>
+    <title>WEB - HTML</title>
     <meta charset="utf-8">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
     <link rel="stylesheet" href="style.css">
 
   </head>
@@ -12,14 +14,22 @@
   <body>
     <h1><a href ="index.html">WEB</a></h1>
 
+
     <div id="grid">
-      <ol>
-        <!--ol : ordered list(numbering)
-            ul : unordered list-->
-        <li><a href ="1.html">HTML</a></li> <!--lt : list-->
-        <li><a href ="2.html">CSS</a></li>
-        <li><a href ="3.html">JavaScript</a></li>
-      </ol>
+      <div id ='list'>
+        <input type="button" value="to LIGHT MODE" onclick="
+          darkLightHandler(this);
+        ">
+
+        <br>
+
+        <ol>
+          <li><a href ="1.html">HTML</a></li>
+          <li><a href ="2.html">CSS</a></li>
+          <li><a href ="3.html">JavaScript</a></li>
+        </ol>
+
+      </div>
 
       <div id = "article">
         <h2>WHAT IS 'HTML'?</h2>  <!--heading-->
@@ -32,7 +42,7 @@
 
         <!--p : paragraph-->
         <p>
-          <a href="https://www.w3.org/TR/html5/" target = "_blank" title = "html5 speicification"><!--a : link / href: link adress / _blank : open new tab / title : tooltip-->Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u><!--underline--> pages</strong> and web applications.
+          <a href="https://www.w3.org/TR/html5/" target = "_blank" title = "html5 speicification"><!--a : link / href: link adress / _blank : open new tab / title : tooltip--><span class = "bold">Hypertext Markup Language (HTML)</span></a> is the standard markup language for <strong>creating <u>web</u><!--underline--> pages</strong> and web applications.
         </p>
 
         <p>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WEB1 - Welcome</title>
+    <title>WEB - Welcome</title>
     <meta charset="utf-8">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
     <link rel="stylesheet" href="style.css">
 
   </head>
@@ -12,18 +14,28 @@
   <body>
     <h1><a href ="index.html">WEB</a></h1>
 
+
     <div id="grid">
-      <ol>
-        <li><a href ="1.html">HTML</a></li>
-        <li><a href ="2.html">CSS</a></li>
-        <li><a href ="3.html">JavaScript</a></li>
-      </ol>
+      <div id ='list'>
+        <input type="button" value="to LIGHT MODE" onclick="
+          darkLightHandler(this);
+        ">
+
+        <br>
+
+        <ol>
+          <li><a href ="1.html">HTML</a></li>
+          <li><a href ="2.html">CSS</a></li>
+          <li><a href ="3.html">JavaScript</a></li>
+        </ol>
+
+      </div>
 
       <div id = "article">
         <h2>WHAT IS 'WEB'?</h2>
 
         <p>
-          The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet. The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.
+          <span class="bold">The World Wide Web (WWW)</span>, commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet. The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.
         </p>
 
         <p>
